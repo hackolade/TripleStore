@@ -1,0 +1,59 @@
+{
+	"model": {
+		"modelName": "New model",
+		"dbVersion": "Any",
+		"dbVendor": "TripleStore"
+	},
+	"container": {
+		"name": "New graph",
+		"indexes": [],
+        "prefixes": [
+            {
+                "prefixLabel": "rdf",
+                "prefixIRI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            },
+            {
+                "prefixLabel": "rdfs",
+                "prefixIRI": "http://www.w3.org/2000/01/rdf-schema#"
+            },
+            {
+                "prefixLabel": "owl",
+                "prefixIRI": "http://www.w3.org/2002/07/owl#"
+            },
+            {
+                "prefixLabel": "xsd",
+                "prefixIRI": "http://www.w3.org/2001/XMLSchema#"
+            }
+        ]
+	},
+	"collection": {
+		"collectionName": "New class",
+		"collectionUsers": [],
+		"collation": {}
+	},
+	"nestedCollection": {
+		"collectionName": "New subclass",
+		"collectionUsers": [],
+		"entityType": "sub-node",
+		"collation": {},
+		"relationName":"subclassOf"
+	},
+	"field": {
+		"name": "New literal"
+	},
+	"patternField": {
+		"name": "^[a-zA-Z0-9_.-]{20}$"
+	},
+	"multipleField": {
+		"primaryKey": false
+	},
+	"subschema": {},
+	"arrayItem": {},
+	"choice": {},
+	"relationship": {},
+	"user": {},
+	"view": {
+		"viewOn": "",
+		"pipeline": ""
+	}
+}

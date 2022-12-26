@@ -1,0 +1,297 @@
+/*
+* Copyright © 2016-2019 by IntegrIT S.A. dba Hackolade.  All rights reserved.
+*
+* The copyright to the computer software herein is the property of IntegrIT S.A.
+* The software may be used and/or copied only with the written permission of 
+* IntegrIT S.A. or in accordance with the terms and conditions stipulated in 
+* the agreement/contract under which the software has been supplied. 
+
+
+In order to define custom properties for any object's properties pane, you may copy/paste from the following,
+making sure that you maintain a proper JSON format.
+
+			{
+				"propertyName": "Simple text",
+				"propertyKeyword": "simpletextProp",
+				"propertyType": "text"
+			},
+			{
+				"propertyName": "Text area",
+				"propertyKeyword": "textareaProp",
+				"propertyTooltip": "Popup for multi-line text entry",
+				"propertyType": "details",
+				"template": "textarea"
+			},
+			{
+				"propertyName": "Dropdown selection",
+				"propertyKeyword": "dropdownProp",
+				"propertyTooltip": "Select from list of options",
+				"propertyType": "select",
+				"options": [
+					"Option 1",
+					"Option 2",
+					"Option 3",
+					"Option 4"
+				]
+			},
+			{
+				"propertyName": "Numeric",
+				"propertyKeyword": "numericProp",
+				"propertyType": "numeric",
+				"valueType": "number",
+				"allowNegative": false
+			},
+			{
+				"propertyName": "Group",
+				"propertyType": "group",
+				"propertyKeyword": "grpProp",
+				"propertyTooltip": "",
+				"structure": [
+					{
+						"propertyName": "Simple Grp Text",
+						"propertyKeyword": "simpleGrpText",
+						"propertyTooltip": "",
+						"propertyType": "text"
+					},
+					{
+						"propertyName": "Group Number",
+						"propertyKeyword": "grpNumber",
+						"propertyType": "numeric",
+						"valueType": "number",
+						"allowNegative": false
+					}
+				]
+			},
+// “groupInput” can have the following states - 0 items, 1 item, and many items.
+// “blockInput” has only 2 states - 0 items or 1 item. 
+// This gives us an easy way to represent it as an object and not as an array internally which is beneficial for processing 
+// and forward-engineering in particular.
+			{
+				"propertyName": "Block",
+				"propertyType": "block",
+				"propertyKeyword": "grpProp",
+				"propertyTooltip": "",
+				"structure": [
+					{
+						"propertyName": "Simple Grp Text",
+						"propertyKeyword": "simpleGrpText",
+						"propertyTooltip": "",
+						"propertyType": "text"
+					},
+					{
+						"propertyName": "Group Number",
+						"propertyKeyword": "grpNumber",
+						"propertyType": "numeric",
+						"valueType": "number",
+						"allowNegative": false
+					}
+				]
+			},
+			{
+				"propertyName": "Field List",
+				"propertyKeyword": "keyList",
+				"propertyType": "fieldList",
+				"template": "orderedList"
+			}, 
+			{
+				"propertyName": "List with attribute",
+				"propertyKeyword": "keyListOrder",
+				"propertyType": "fieldList",
+				"template": "orderedList",
+				"attributeList": [
+					"ascending",
+					"descending"
+				]
+			}
+
+*/
+
+[
+	{
+		"lowerTab": "Details",
+		"structure": [
+			{
+				"propertyName": "DB vendor",
+				"propertyKeyword": "dbVendor",
+				"propertyTooltip": "DB vendor",
+				"propertyType": "select",
+				"options": [
+					"TripleStore"
+				],
+				"disabledOption": true
+			},
+			{
+				"propertyName": "DB version",
+				"propertyKeyword": "dbVersion",
+				"propertyTooltip": "DB version",
+				"propertyType": "select",
+				"defaultValue": "4.3",
+				"options": [
+					"any"
+				]
+			},
+			{
+				"propertyName": "Comments",
+				"propertyKeyword": "comments",
+				"propertyTooltip": "comments",
+				"propertyType": "details",
+				"template": "textarea"
+			}
+		]
+	},
+	{
+		"lowerTab": "Relationships",
+		"structure": [
+			{
+				"propertyName": "Language tags",
+				"propertyType": "group",
+				"propertyKeyword": "languageTags",
+				"propertyTooltip": "",
+				"structure": [
+					{
+						"propertyName": "Label",
+						"propertyKeyword": "label",
+						"propertyTooltip": "Enter label",
+						"propertyType": "text"
+					},
+					{
+						"propertyName": "Tag",
+						"propertyKeyword": "languageTag",
+						"propertyTooltip": "Enter language-tagged string",
+						"propertyType": "text"
+					}
+				]
+			},
+			{
+				"propertyName": "IRI",
+				"propertyKeyword": "iri",
+				"propertyTooltip": "Enter the International Resource Identifier for this resource, according to RFC 3987",
+				"propertyType": "text",
+				"propertyFormat": "uri",
+				"propertyValidate": true
+			},
+			{
+				"propertyName": "SubProperty of",
+				"propertyType": "group",
+				"propertyKeyword": "SubPropertyOfList",
+				"propertyTooltip": "",
+				"structure": [
+					{
+						"propertyName": "Property",
+						"propertyKeyword": "subPropertyOf",
+						"propertyTooltip": "Specifies that one property  membership implies another one",
+						"propertyType": "text"
+					}
+				]
+			},
+			{
+				"propertyName": "Disjoint with",
+				"propertyType": "group",
+				"propertyKeyword": "propertyDisjointWithList",
+				"propertyTooltip": "",
+				"structure": [
+					{
+						"propertyName": "Property",
+						"propertyKeyword": "propertyDisjointWith",
+						"propertyTooltip": "Property obtained by taking another property and changing its direction",
+						"propertyType": "text"
+					}
+				]
+			},
+			{
+				"propertyName": "Inverse of",
+				"propertyType": "group",
+				"propertyKeyword": "InverseOfList",
+				"propertyTooltip": "",
+				"structure": [
+					{
+						"propertyName": "Property",
+						"propertyKeyword": "inverseOf",
+						"propertyTooltip": "Property obtained by taking another property and changing its direction",
+						"propertyType": "text"
+					}
+				]
+			},
+			{
+				"propertyName": "Symmetric",
+				"propertyKeyword": "SymmetricProperty",
+				"propertyType": "checkbox"
+			},
+			{
+				"propertyName": "Asymmetric",
+				"propertyKeyword": "AsymmetricProperty",
+				"propertyType": "checkbox"
+			},
+			{
+				"propertyName": "Reflexive",
+				"propertyKeyword": "ReflexiveProperty",
+				"propertyType": "checkbox"
+			},
+			{
+				"propertyName": "Irreflexive",
+				"propertyKeyword": "IrreflexiveProperty",
+				"propertyType": "checkbox"
+			},
+			{
+				"propertyName": "Transitive",
+				"propertyKeyword": "TransitiveProperty",
+				"propertyType": "checkbox"
+			},
+			{
+				"propertyName": "Functional",
+				"propertyKeyword": "FunctionalProperty",
+				"propertyType": "checkbox"
+			},
+			{
+				"propertyName": "Inverse functional",
+				"propertyKeyword": "InverseFunctionalProperty",
+				"propertyType": "checkbox"
+			},
+			{
+				"propertyName": "Deprecated",
+				"propertyKeyword": "DeprecatedProperty",
+				"propertyType": "checkbox"
+			},
+			{
+				"propertyName": "Property restrictions",
+				"propertyKeyword": "comments",
+				"propertyTooltip": "Provide logic-based constructors for complex classes, such as existential or universal quantifications, cardinality restrictions",
+				"propertyType": "details",
+				"template": "textarea"
+			},
+			{
+				"propertyName": "Min count",
+				"propertyKeyword": "minCount",
+				"propertyType": "numeric",
+				"valueType": "integer",
+				"allowNegative": false
+			},
+			{
+				"propertyName": "Max count",
+				"propertyKeyword": "maxCount",
+				"propertyType": "numeric",
+				"valueType": "integer",
+				"allowNegative": false
+			},
+			{
+				"propertyName": "Severity",
+				"propertyKeyword": "severity",
+				"propertyTooltip": "Select from list of options",
+				"propertyType": "select",
+				"options": [
+					"",
+					"Warning",
+					"Violation",
+					"Fatal"
+				]
+			},
+			{
+				"propertyName": "Comments",
+				"propertyKeyword": "comments",
+				"propertyTooltip": "comments",
+				"propertyType": "details",
+				"template": "textarea"
+			}
+		]
+	}
+]

@@ -1,0 +1,11 @@
+{
+  "name": "NEO4J",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Hackolade",
+  "dependencies": {
+    "@hackolade/neo4j-driver": "^4.4.5-ssl",
+    "tunnel-ssh": "github:hackolade/tunnel-ssh"
+  },
+  "installed": true
+}

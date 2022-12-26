@@ -1,0 +1,48 @@
+{
+    "name": "TripleStore",
+    "version": "0.0.1",
+    "versionDate": "2022-12-31",
+    "author": "hackolade",
+    "engines": {
+        "hackolade": "5.1.3",
+        "hackoladePlugin": "1.0.0"
+    },
+    "contributes": {
+        "target": {
+            "applicationTarget": "TripleStore",
+            "title": "TripleStore",
+            "versions": [
+                "any"
+            ]
+        },
+        "features": {
+            "jaySchemaHasRequiredPatternField": false,
+            "nestedCollections": {
+                "isVirtual":true,
+                "hasMultipleParents":true
+            },
+            "graphDB": true,
+            "relationships": {
+                "connectOnEntityLevel": true,
+                "hasData": true
+            },
+            "enableForwardEngineering": {
+                "jsonDocument": true,
+                "jsonSchema": true,
+                "excel": true,
+                "plugin": true
+            },
+            "enableReverseEngineering": {
+                "jsonDocument": true,
+                "jsonSchema": true,
+                "ddl": true,
+                "xsd": true,
+                "excel": true,
+                "plugin": true
+            },
+            "FEScriptCommentsSupported": true
+        }
+    },
+    "description": "Hackolade plugin for Semantic Knowledge Graph TripleStores",
+    "disabled": false
+}

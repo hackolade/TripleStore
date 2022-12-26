@@ -1,0 +1,24 @@
+{
+	"name": "anyURI",
+	"erdAbbreviation": "<uri>",
+	"dtdAbbreviation": "{URI}",
+	"parentType": "string",
+	"useSample": true,
+	"sample": "http://example.com",
+	"hiddenOnEntity": "view",
+	"defaultValues": {
+		"primaryKey": false,
+		"relationshipType": "",
+		"parentRelationship": "",
+		"childRelationships": [],
+		"foreignCollection": "",
+		"foreignField": [],
+		"default": "",
+		"minLength": "",
+		"maxLength": "",
+		"enum": [],
+		"sample":"",
+		"pattern": "",
+		"comments":""
+	}
+}

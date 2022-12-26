@@ -1,0 +1,24 @@
+{
+	"name": "normalizedString",
+	"erdAbbreviation": "<normStr>",
+	"dtdAbbreviation": "{normStr}",
+	"parentType": "string",
+	"useSample": true,
+	"sample": "The name of a person",
+	"hiddenOnEntity": "view",
+	"defaultValues": {
+		"primaryKey": false,
+		"relationshipType": "",
+		"parentRelationship": "",
+		"childRelationships": [],
+		"foreignCollection": "",
+		"foreignField": [],
+		"default": "",
+		"minLength": "",
+		"maxLength": "",
+		"enum": [],
+		"sample":"",
+		"pattern": "",
+		"comments":""
+	}
+}
