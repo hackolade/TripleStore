@@ -192,6 +192,17 @@ Why is this property allowing me too enter anything, even if it is not a valid I
 				]
 			},
 			{
+				"propertyName": "Ontology",
+				"propertyKeyword": "Ontology",
+				"propertyTooltip": "Specify where the onlogy is located",
+				"propertyType": "text",
+				"propertyFormat": "uri",
+/*
+Why is this property allowing me too enter anything, even if it is not a valid IRI??
+*/
+				"propertyValidate": true
+			},
+			{
 				"propertyName": "Namespace",
 				"propertyKeyword": "namespace",
 				"propertyTooltip": "Specify a namespace",
