@@ -10,52 +10,61 @@
 		"primaryKey": false,
 		"default": "",
 		"enum": [],
-		"sample":"",
-		"comments":"",
-		"pattern":"",
+		"sample": "",
+		"comments": "",
+		"pattern": "",
 		"format": "",
 		"mode": "date"
 	},
-	"descriptor": [{
-		"schema": {
-			"mode": "date"
+	"descriptor": [
+		{
+			"schema": {
+				"mode": "date"
+			},
+			"format": "YYYY-MM-DD"
 		},
-		"format": "YYYY-MM-DD"
-	}, {
-		"schema": {
-			"mode": "timestamp"
+		{
+			"schema": {
+				"mode": "timestamp"
+			},
+			"format": "YYYY-MM-DD hh:mm:ss"
 		},
-		"format": "YYYY-MM-DD hh:mm:ss"
-	}, {
-		"schema": {
-			"mode": "timestamp",
-			"fractSecPrecision": 3
+		{
+			"schema": {
+				"mode": "timestamp",
+				"fractSecPrecision": 3
+			},
+			"format": "YYYY-MM-DD hh:mm:ss.nnn"
 		},
-		"format": "YYYY-MM-DD hh:mm:ss.nnn"
-	}, {
-		"schema": {
-			"mode": "timestamp",
-			"fractSecPrecision": 6
+		{
+			"schema": {
+				"mode": "timestamp",
+				"fractSecPrecision": 6
+			},
+			"format": "YYYY-MM-DD hh:mm:ss.nnnnnn"
 		},
-		"format": "YYYY-MM-DD hh:mm:ss.nnnnnn"
-	}, {
-		"schema": {
-			"mode": "timestamp",
-			"fractSecPrecision": 9
+		{
+			"schema": {
+				"mode": "timestamp",
+				"fractSecPrecision": 9
+			},
+			"format": "YYYY-MM-DD hh:mm:ss.nnnnnnnnn"
 		},
-		"format": "YYYY-MM-DD hh:mm:ss.nnnnnnnnn"
-	}, {
-		"schema": {
-			"mode": "timestamp",
-			"fractSecPrecision": 3,
-			"withTimeZone": true
+		{
+			"schema": {
+				"mode": "timestamp",
+				"fractSecPrecision": 3,
+				"withTimeZone": true
+			},
+			"format": "YYYY-MM-DD hh:mm:ss.nnnZ"
 		},
-		"format": "YYYY-MM-DD hh:mm:ss.nnnZ"
-	}, {
-		"schema": {
-			"mode": "timestamp",
-			"fractSecPrecision": 6,
-			"withTimeZone": true
-		},
-		"format": "YYYY-MM-DD hh:mm:ss.nnnnnnZ"
-	}]}
+		{
+			"schema": {
+				"mode": "timestamp",
+				"fractSecPrecision": 6,
+				"withTimeZone": true
+			},
+			"format": "YYYY-MM-DD hh:mm:ss.nnnnnnZ"
+		}
+	]
+}

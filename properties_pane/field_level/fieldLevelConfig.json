@@ -147,12 +147,7 @@ making sure that you maintain a proper JSON format.
 				"propertyKeyword": "severity",
 				"propertyTooltip": "Select from list of options",
 				"propertyType": "select",
-				"options": [
-					"",
-					"Warning",
-					"Violation",
-					"Fatal"
-				]
+				"options": ["", "Warning", "Violation", "Fatal"]
 			},
 			{
 				"propertyName": "Min count",
@@ -214,12 +209,7 @@ making sure that you maintain a proper JSON format.
 				"propertyKeyword": "severity",
 				"propertyTooltip": "Select from list of options",
 				"propertyType": "select",
-				"options": [
-					"",
-					"Warning",
-					"Violation",
-					"Fatal"
-				]
+				"options": ["", "Warning", "Violation", "Fatal"]
 			},
 			{
 				"propertyName": "Min count",
@@ -281,12 +271,7 @@ making sure that you maintain a proper JSON format.
 				"propertyKeyword": "severity",
 				"propertyTooltip": "Select from list of options",
 				"propertyType": "select",
-				"options": [
-					"",
-					"Warning",
-					"Violation",
-					"Fatal"
-				]
+				"options": ["", "Warning", "Violation", "Fatal"]
 			},
 			{
 				"propertyName": "Min count",
@@ -307,16 +292,7 @@ making sure that you maintain a proper JSON format.
 			"sample",
 			"comments"
 		],
-		"boolean": [
-			"name",
-			"schemaId",
-			"description",
-			"type",
-			"dependencies",
-			"default",
-			"sample",
-			"comments"
-		],
+		"boolean": ["name", "schemaId", "description", "type", "dependencies", "default", "sample", "comments"],
 		"binary": [
 			"name",
 			"code",
@@ -328,10 +304,7 @@ making sure that you maintain a proper JSON format.
 				"propertyName": "Subtype",
 				"propertyKeyword": "mode",
 				"propertyType": "select",
-				"options": [
-					"hexBinary",
-					"base64Binary"
-				],
+				"options": ["hexBinary", "base64Binary"],
 				"defaultValue": "hexBinary",
 				"data": "options",
 				"valueType": "string"
@@ -352,12 +325,7 @@ making sure that you maintain a proper JSON format.
 				"propertyKeyword": "severity",
 				"propertyTooltip": "Select from list of options",
 				"propertyType": "select",
-				"options": [
-					"",
-					"Warning",
-					"Violation",
-					"Fatal"
-				]
+				"options": ["", "Warning", "Violation", "Fatal"]
 			},
 			{
 				"propertyName": "Min count",
@@ -393,12 +361,7 @@ making sure that you maintain a proper JSON format.
 				"propertyKeyword": "severity",
 				"propertyTooltip": "Select from list of options",
 				"propertyType": "select",
-				"options": [
-					"",
-					"Warning",
-					"Violation",
-					"Fatal"
-				]
+				"options": ["", "Warning", "Violation", "Fatal"]
 			},
 			{
 				"propertyName": "Min count",
@@ -434,12 +397,7 @@ making sure that you maintain a proper JSON format.
 				"propertyKeyword": "severity",
 				"propertyTooltip": "Select from list of options",
 				"propertyType": "select",
-				"options": [
-					"",
-					"Warning",
-					"Violation",
-					"Fatal"
-				]
+				"options": ["", "Warning", "Violation", "Fatal"]
 			},
 			{
 				"propertyName": "Min count",
@@ -475,12 +433,7 @@ making sure that you maintain a proper JSON format.
 				"propertyKeyword": "severity",
 				"propertyTooltip": "Select from list of options",
 				"propertyType": "select",
-				"options": [
-					"",
-					"Warning",
-					"Violation",
-					"Fatal"
-				]
+				"options": ["", "Warning", "Violation", "Fatal"]
 			},
 			{
 				"propertyName": "Min count",
@@ -516,12 +469,7 @@ making sure that you maintain a proper JSON format.
 				"propertyKeyword": "severity",
 				"propertyTooltip": "Select from list of options",
 				"propertyType": "select",
-				"options": [
-					"",
-					"Warning",
-					"Violation",
-					"Fatal"
-				]
+				"options": ["", "Warning", "Violation", "Fatal"]
 			},
 			{
 				"propertyName": "Min count",
@@ -557,12 +505,7 @@ making sure that you maintain a proper JSON format.
 				"propertyKeyword": "severity",
 				"propertyTooltip": "Select from list of options",
 				"propertyType": "select",
-				"options": [
-					"",
-					"Warning",
-					"Violation",
-					"Fatal"
-				]
+				"options": ["", "Warning", "Violation", "Fatal"]
 			},
 			{
 				"propertyName": "Min count",
@@ -598,12 +541,7 @@ making sure that you maintain a proper JSON format.
 				"propertyKeyword": "severity",
 				"propertyTooltip": "Select from list of options",
 				"propertyType": "select",
-				"options": [
-					"",
-					"Warning",
-					"Violation",
-					"Fatal"
-				]
+				"options": ["", "Warning", "Violation", "Fatal"]
 			},
 			{
 				"propertyName": "Min count",

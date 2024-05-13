@@ -17,8 +17,8 @@
 		"minLength": "",
 		"maxLength": "",
 		"enum": [],
-		"sample":"en-US",
+		"sample": "en-US",
 		"pattern": "[a-zA-Z]{1,8}(-[a-zA-Z0-9]{1,8})*",
-		"comments":""
+		"comments": ""
 	}
 }
