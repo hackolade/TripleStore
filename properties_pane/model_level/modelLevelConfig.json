@@ -115,9 +115,7 @@ making sure that you maintain a proper JSON format.
 				"propertyKeyword": "dbVendor",
 				"propertyTooltip": "DB vendor",
 				"propertyType": "select",
-				"options": [
-					"TripleStore"
-				],
+				"options": ["TripleStore"],
 				"disabledOption": true
 			},
 			{
@@ -126,9 +124,7 @@ making sure that you maintain a proper JSON format.
 				"propertyTooltip": "DB version",
 				"propertyType": "select",
 				"defaultValue": "4.3",
-				"options": [
-					"any"
-				]
+				"options": ["any"]
 			},
 			{
 				"propertyName": "Comments",
@@ -278,12 +274,7 @@ making sure that you maintain a proper JSON format.
 				"propertyKeyword": "severity",
 				"propertyTooltip": "Select from list of options",
 				"propertyType": "select",
-				"options": [
-					"",
-					"Warning",
-					"Violation",
-					"Fatal"
-				]
+				"options": ["", "Warning", "Violation", "Fatal"]
 			},
 			{
 				"propertyName": "Comments",

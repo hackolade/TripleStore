@@ -7,24 +7,24 @@
 	"container": {
 		"name": "New graph",
 		"indexes": [],
-        "prefixes": [
-            {
-                "prefixLabel": "rdf",
-                "prefixIRI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-            },
-            {
-                "prefixLabel": "rdfs",
-                "prefixIRI": "http://www.w3.org/2000/01/rdf-schema#"
-            },
-            {
-                "prefixLabel": "owl",
-                "prefixIRI": "http://www.w3.org/2002/07/owl#"
-            },
-            {
-                "prefixLabel": "xsd",
-                "prefixIRI": "http://www.w3.org/2001/XMLSchema#"
-            }
-        ]
+		"prefixes": [
+			{
+				"prefixLabel": "rdf",
+				"prefixIRI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			},
+			{
+				"prefixLabel": "rdfs",
+				"prefixIRI": "http://www.w3.org/2000/01/rdf-schema#"
+			},
+			{
+				"prefixLabel": "owl",
+				"prefixIRI": "http://www.w3.org/2002/07/owl#"
+			},
+			{
+				"prefixLabel": "xsd",
+				"prefixIRI": "http://www.w3.org/2001/XMLSchema#"
+			}
+		]
 	},
 	"collection": {
 		"collectionName": "New class",
@@ -36,7 +36,7 @@
 		"collectionUsers": [],
 		"entityType": "sub-node",
 		"collation": {},
-		"relationName":"subclassOf"
+		"relationName": "subclassOf"
 	},
 	"field": {
 		"name": "New literal"
