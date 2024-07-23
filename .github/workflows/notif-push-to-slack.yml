@@ -7,7 +7,7 @@ on:
 jobs:
   notify:
     runs-on: ubuntu-latest
-    if: github.event.pusher.name == '${{ secrets.COMMIT_PUSH_SOURCE }}'
+    if: github.event.pusher.name == ${{ secrets.COMMIT_PUSH_SOURCE }}
     env:
         AUTHOR: ${{ github.event.pusher.name }}
     steps:
