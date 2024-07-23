@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: notify slack
         id: slack
-        if: ${{ env.AUTHOR != env.COMMIT_PUSH_SOURCE }}
+        if: ${{ env.AUTHOR == env.COMMIT_PUSH_SOURCE }}
         uses: slackapi/slack-github-action@v1.26.0
         with:
             channel-id: 'develop-direct-pushes'
