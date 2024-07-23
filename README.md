@@ -13,3 +13,4 @@ Plugins can be customized by following these [instructions](https://hackolade.co
 ## TO BE REMOVED
 
 - This is a cicd test
+- This is a new test
