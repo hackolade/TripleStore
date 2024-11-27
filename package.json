@@ -1,6 +1,6 @@
 {
     "name": "TripleStore",
-    "version": "0.0.15",
+    "version": "0.0.16",
     "author": "hackolade",
     "engines": {
         "hackolade": "7.4.0",
