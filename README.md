@@ -9,5 +9,3 @@ Hackolade exposes its core data modeling engine through a plugin architecture.  
 To enable data modeling capabilities for a target, you must first download and install the plugin, following these [instructions](https://hackolade.com/help/DownloadadditionalDBtargetplugin.html "Plugin download instructions").
 
 Plugins can be customized by following these [instructions](https://hackolade.com/help/Userdefinedcustomproperties.html "Plugin customization instructions").
-
-- Test back trigger
