@@ -11,5 +11,3 @@ To enable data modeling capabilities for a target, you must first download and i
 Plugins can be customized by following these [instructions](https://hackolade.com/help/Userdefinedcustomproperties.html "Plugin customization instructions").
 
 ## TO BE REMOVED
-
-- This is a cicd test
