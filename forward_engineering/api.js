@@ -64,7 +64,7 @@ module.exports = {
 			if (branchData.relationship && branchData.child) {
 				let parentName = branchData.parent.collectionName;
 				let childName = branchData.child.collectionName;
-				let relationshipName = branchData.relationship.name;
+				let relationshipName = branchData.relationship.code || branchData.relationship.name;
 				let relationshipData = '';
 
 				const isParentActivated = _.get(branchData, 'parent.isActivated', true);
@@ -305,7 +305,11 @@ module.exports = {
 						const isFieldActivated = _.get(relationship, `properties.${fieldName}.isActivated`, true);
 						result.push(
 							this.commentIfDeactivated(
-								getExistsConstraint({ labelName: relationship.name, fieldName, type: 'relationship' }),
+								getExistsConstraint({
+									labelName: relationship.code || relationship.name,
+									fieldName,
+									type: 'relationship',
+								}),
 								isFieldActivated && isRelationshipActivated,
 							),
 						);
